@@ -44,5 +44,8 @@
   position: absolute;
   z-index: 2;
   color: white;
+  background-image: radial-gradient(#27272a 1px, transparent 0);
+  background-position: 50% center;
+  background-size: 20px 20px;
   display: flex;
 }
