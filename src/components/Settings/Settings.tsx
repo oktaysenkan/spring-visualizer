@@ -59,17 +59,6 @@ const Settings = ({ mass, damping, stiffness, onReset }: Props) => {
               query: { ...router.query, mass: formatMassValue(+value) },
             });
           }}
-          slotProps={{
-            input: {
-              className: "bg-red-500",
-            },
-            thumb: {
-              className: "bg-zinc-300",
-            },
-            track: {
-              className: "bg-zinc-300",
-            },
-          }}
         />
       </div>
 
@@ -88,17 +77,6 @@ const Settings = ({ mass, damping, stiffness, onReset }: Props) => {
           onChange={(e, value) =>
             router.push({ query: { ...router.query, damping: value } })
           }
-          slotProps={{
-            input: {
-              className: "bg-red-500",
-            },
-            thumb: {
-              className: "bg-zinc-300",
-            },
-            track: {
-              className: "bg-zinc-300",
-            },
-          }}
         />
       </div>
 
@@ -117,17 +95,6 @@ const Settings = ({ mass, damping, stiffness, onReset }: Props) => {
           onChange={(e, value) =>
             router.push({ query: { ...router.query, stiffness: value } })
           }
-          slotProps={{
-            input: {
-              className: "bg-red-500",
-            },
-            thumb: {
-              className: "bg-zinc-300",
-            },
-            track: {
-              className: "bg-zinc-300",
-            },
-          }}
         />
       </div>
 
